@@ -1,0 +1,27 @@
+header {
+    background-color:#87CEEB;
+    height: 150px;
+}
+nav {
+    background-color: rgb(81, 121, 233);
+    height: 100%;
+}
+footer {
+    background-color: #87CEEB;
+    height: 300px;
+}
+#S1 {
+    background-color:rgb(129, 146, 149);
+    height: 100%;
+}
+#S2 {
+    background-color: rgb(182, 184, 185);
+    height: 100%;
+}
+dl {
+    font-family: Impact;
+    font-size: 30px;
+}
+p {
+    font-size: 20px;
+}

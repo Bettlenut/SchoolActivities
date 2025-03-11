@@ -1,0 +1,12 @@
+body {
+    background-color: burlywood;
+}
+input, label, textarea {
+    display: block;
+}
+input[type = "checkbox"], input[type = "radio"] {
+    display: inline;
+}
+input[type = "email"] {
+    width: 300px;
+}

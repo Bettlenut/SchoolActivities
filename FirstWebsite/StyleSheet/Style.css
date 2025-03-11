@@ -1,0 +1,27 @@
+#History {
+    color: darkred;
+    font-family: cursive;
+    font-size:50px;
+}
+
+h2 {
+    color: blueviolet;
+    font-family: cursive;
+    font-size:50px;
+}
+header {
+    background-color:rgb(132, 132, 135);
+    height: 150px;
+}
+nav {
+    background-color: rgb(48, 63, 63);
+    height: 50px;
+}
+section {
+    background-color:rgb(180, 189, 191);
+    height: 400px;
+}
+footer {
+    background-color: rgb(132, 132, 135);
+    height: 300px;
+}

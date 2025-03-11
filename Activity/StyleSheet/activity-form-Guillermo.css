@@ -1,0 +1,36 @@
+body {
+    background-image: url("https://i.sstatic.net/jGlzr.png");
+}
+label {
+    display: block;
+    font-size: larger;
+    font-weight: bold;
+}
+input[type="submit"] {
+    display: block;
+}
+input[type="text"] {
+    width: 300px;
+    height: 15px;
+    padding: 5px;
+    text-align: center;
+}
+textarea {
+    font-size: small;
+    padding: 5px;
+    font-family: sans-serif;
+    text-align: center;
+    border-radius: 5px;
+    border-style: none;
+}
+input[type="number"] {
+    width: 40px;
+}
+input[type="date"] {
+    font-size: large;
+    padding: 5px;
+}
+input {
+    border-radius: 5px;
+    border-style: none;
+}
