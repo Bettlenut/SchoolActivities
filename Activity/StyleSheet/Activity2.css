@@ -1,0 +1,117 @@
+.header, .banner, .sec1, .sec2, .sec3, .sec4, .sec5, .sec6, .footer {
+    display: flex;
+}
+.header {
+    height: 100px;
+    background-color: #043873;
+    flex: 1;
+}
+.logo {
+    display: flex;
+    flex: 40%;
+    margin-left: 10%;
+    color: white;
+    font-size: larger;
+    align-items: center;
+}
+.nav {
+    display: flex;
+    flex: 60%;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 25px;
+    margin-right: 10%;
+    color: antiquewhite;
+}
+input[type="button"] {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 1%;
+    background-color: #4F9CF9;
+    color: white;
+    font-size: large;
+}
+.banner {
+    height: 800px;
+    background-color: #043873;
+}
+.sec1 {
+    height: 1600px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.sec2 {
+    height: 800px;
+    background-color: #043873;
+}
+.sec3 {
+    height: 800px;
+}
+.sec4 {
+    height: 600px;
+    background-color: #043873;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec5 {
+    height: 1000px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.sec6 {
+    height: 800px;
+    background-color: #043873;
+}
+.footer {
+    height: 100px;
+    background-color: #043873;
+    margin-top: 3%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10%;
+    gap: 20px;
+}
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10%;
+}
+.banner>.left>h1, .sec2>.left>h1, .sec4>h1, .sec6>.left>h1 {
+    color: white;
+}
+.banner>.left>p, .sec2>.left>p, .sec4>p, .sec6>.left>p {
+    color: white;
+}
+.top {
+    display: flex;
+    flex-direction: row;
+}
+.down, .sec3, .sec6 {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+.down>.left, .sec3 >.left, .sec6>.left {
+    margin-left: 0%;
+    margin-right: 10%;
+}
+.down>.right, .sec3 >.right, .sec6>.right {
+    margin-right: 0%;
+    margin-left: 10%;
+}
+h1 {
+    font-size: 60px;
+    font-family: sans-serif;
+}
+p {
+    font-size: 20px;
+}
