@@ -1,0 +1,114 @@
+@media screen and (width <= 375px) {
+    body {
+        margin: 0%;
+    }
+    header {
+        background-color: #DACFCF;
+        display: flex;
+        padding: 21px 20px;
+        margin: 5%;
+    }
+    header>.item {
+        background-color: #E0E0E0;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        padding: 2%;
+    }
+    .smallmenu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .largemenu {
+        display: none;
+    }
+    button {
+        font-size: 16px;
+        font-weight: 400;
+        width: 100%;
+    }
+    .banner {
+        display: flex;
+        flex-flow: column wrap;
+        background-color: #DACFCF;
+        height: 330px;
+        margin: 5%;
+    }
+    .banner>.item {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10%;
+    }
+    .banner>.item>h1 {
+        background-color: #E0E0E0;
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .banner>.item>p {
+        background-color: #E0E0E0;
+        padding: 10px;
+    }
+    .section {
+        display: flex;
+        flex-flow: column;
+        gap: 2%;
+        padding: 2%;
+        background-color: #DACFCF;
+        height: 682px;
+        margin: 5%;
+    }
+    .section>.item1 {
+        background-color: #E0E0E0;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10%;
+    }
+    .section>.item2 {
+        background-color: #E0E0E0;
+        flex: 1;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .section>.item2>p {
+        font-size: larger;
+        text-align: center;
+    }
+    footer {
+        background-color: #DACFCF;
+        height: 330px;
+        margin: 5%;
+    }
+    
+}
+@media screen and (width >= 376px) and (width <= 744px) {
+    
+}
+@media screen and (width >= 745px) and (width <= 1024px) {
+    header {
+        display: flex;
+    }
+    .item {
+        flex: 1;
+    }
+    .smallmenu {
+        display: none;
+    }
+    .largemenu {
+        display: flex;
+    }
+}
+@media screen and (width >= 1025px) and (width <= 1440px) {
+    
+}
+* {
+    border: 1px red solid;
+}
