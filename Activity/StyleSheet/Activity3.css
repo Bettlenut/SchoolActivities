@@ -1,114 +1,251 @@
 @media screen and (width <= 375px) {
-    body {
-        margin: 0%;
-    }
-    header {
-        background-color: #DACFCF;
-        display: flex;
-        padding: 21px 20px;
-        margin: 5%;
-    }
-    header>.item {
-        background-color: #E0E0E0;
-        flex: 1;
-        display: flex;
-        align-items: center;
-        padding: 2%;
-    }
-    .smallmenu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-    .largemenu {
+    .pcmenu {
         display: none;
     }
-    button {
-        font-size: 16px;
-        font-weight: 400;
-        width: 100%;
+    .itempc {
+        display: none;
     }
-    .banner {
+    .cpmenu {
         display: flex;
-        flex-flow: column wrap;
-        background-color: #DACFCF;
-        height: 330px;
-        margin: 5%;
+        flex-direction: row;
     }
-    .banner>.item {
-        flex: 1;
+    .itemcp> button {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10%;
+        flex-direction: column;
     }
-    .banner>.item>h1 {
-        background-color: #E0E0E0;
-        padding: 10px;
-        width: 100%;
+    .testimonialsection> .itemcp {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        button {
+        width: 50%;
+        height: 100%;
+        font-size: 1.5rem;
+        align-self: center;
+        margin-top: 5%;
+        }
     }
-    .banner>.item>p {
-        background-color: #E0E0E0;
-        padding: 10px;
-    }
-    .section {
-        display: flex;
-        flex-flow: column;
-        gap: 2%;
-        padding: 2%;
-        background-color: #DACFCF;
-        height: 682px;
-        margin: 5%;
-    }
-    .section>.item1 {
-        background-color: #E0E0E0;
-        flex: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10%;
-    }
-    .section>.item2 {
-        background-color: #E0E0E0;
-        flex: 1;
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-    }
-    .section>.item2>p {
-        font-size: larger;
-        text-align: center;
+    .aboutsection, .servicesection, .blogsection, .testimonialsection {
+        flex-direction: column;
     }
     footer {
-        background-color: #DACFCF;
-        height: 330px;
-        margin: 5%;
+        .contact, .newsletter {
+            flex-direction: column;
+        }
     }
-    
+    h1 {
+        background-color: lightblue;
+        font-size: 3rem;
+        text-align: center;
+    }
+    h2, p {
+        text-align: center;
+        margin: 1%;
+    }
 }
 @media screen and (width >= 376px) and (width <= 744px) {
-    
-}
-@media screen and (width >= 745px) and (width <= 1024px) {
-    header {
-        display: flex;
-    }
-    .item {
-        flex: 1;
-    }
-    .smallmenu {
+    .cpmenu {
         display: none;
     }
-    .largemenu {
+    .itemcp {
+        display: none;
+    }
+    .aboutsection, .servicesection, .blogsection, .testimonialsection {
+        flex-direction: column;
+    }
+    .testimonialsection> .itempc {
         display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5%;
+        .testimonial {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    h1 {
+        background-color: lightblue;
+        font-size: 3rem;
+        text-align: center;
+    }
+    h2, p {
+        text-align: center;
+        margin: 1%;
     }
 }
-@media screen and (width >= 1025px) and (width <= 1440px) {
-    
+@media screen and (width >= 745px) and (width <= 1440px) {
+    .cpmenu {
+        display: none;
+    }
+    .pcmenu {
+        width: 50%;
+        display: flex;
+        justify-content: end;
+        gap: 10%;
+    }
+    .itemcp {
+        display: none;
+    }
+    .aboutsection, .blogsection, .testimonialsection {
+        flex-direction: row;
+        gap : 5%;
+    }
+    .servicesection {
+        flex-direction: row-reverse;
+        gap: 5%;
+    }
+    .item1 {
+        flex: 1;
+    }
+    .item2 {
+        flex: 1;
+    }
+    .testimonialsection> .itempc {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5%;
+        .testimonial {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    h1 {
+        background-color: lightblue;
+        font-size: 5rem;
+        text-align: center;
+    }
+    h2, p {
+        text-align: center;
+        margin: 1%;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    p, li {
+        font-size: 1.5rem;
+    }
 }
-* {
-    border: 1px red solid;
+@media screen and (width >= 1441px) {
+    .cpmenu {
+        display: none;
+    }
+    .pcmenu {
+        width: 50%;
+        display: flex;
+        justify-content: end;
+        gap: 10%;
+    }
+    .itemcp {
+        display: none;
+    }
+    .aboutsection, .blogsection, .testimonialsection {
+        flex-direction: row;
+        gap : 5%;
+    }
+    .servicesection {
+        flex-direction: row-reverse;
+        gap: 5%;
+    }
+    .item1 {
+        flex: 1;
+    }
+    .item2 {
+        flex: 1;
+    }
+    .testimonialsection> .itempc {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5%;
+        .testimonial {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    h1 {
+        background-color: lightblue;
+        font-size: 8rem;
+        text-align: center;
+    }
+    h2, p {
+        text-align: center;
+        margin: 1%;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    p, li {
+        font-size: 1.5rem;
+    }
+}
+body {
+    margin: 0%;
+}
+header {
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 80px;
+}
+.logo {
+    flex: .2;
+    display: flex;
+    align-items: center;
+}
+.logo>img {
+    width: 80%;
+    height: auto;
+    max-width: 100px;
+}
+.menu {
+    flex: .6;
+    display: flex;
+    justify-content: end;
+    button {
+        font-size: 1rem;
+        background-color: rgb(240, 143, 240);
+        padding: 1%;
+    }
+}
+.banner {
+    background-color: rgb(224, 221, 221);
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+        button {
+            font-size: 1.5rem;
+            background-color: purple;
+            margin: 10%;
+            border-radius: 5%;
+        }
+}
+.aboutsection, .servicesection, .blogsection, .testimonialsection {
+    background-color: rgb(224, 221, 221);
+    margin: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.testimonialsection {
+    flex-direction: column;
+}
+footer {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    .links, .social, .newsletter, .contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    * {
+        margin: 0%;
+    }
 }
