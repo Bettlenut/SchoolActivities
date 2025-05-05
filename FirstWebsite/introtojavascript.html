@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to JavaScript</title>
+</head>
+
+<body>
+    <button onclick="modifyElement();">Click Me!</button>
+
+    <h1 id="titleName">Title</h1>
+    <ul id="list"></ul>
+
+    <script>
+        function modifyElement() {
+            let list = document.getElementById("list");
+            let newLi = document.createElement("li");
+
+            newLi.innerHTML = "1";
+            list.appendChild(newLi);
+        }
+
+        function manipulateHtml() {
+            let title = document.getElementById("titleName");
+
+            title.innerHTML = "WebDev NCIII";
+            title.style.color = "pink";
+        }
+
+        function handleClick() {
+            let name = "Miku";
+            let age = "25";
+            let isStudent = false;
+
+            console.log("Name: ", name);
+            console.log("Age: ", age);
+            console.log("Is Student: ", isStudent);
+
+            alert("Welcome!");
+            let ans = prompt("Enter Name: ");
+            confirm("Are you sure? " + ans)
+            console.log("???: ", ans);
+
+        }
+
+    </script>
+</body>
+
+</html>

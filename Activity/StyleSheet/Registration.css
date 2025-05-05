@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+input {
+    height: 30px;
+    width: 500px;
+    margin: 2% 0%;
+    padding: 2%;
+}
+input[type="checkbox"] {
+    width: 30px;
+    cursor: pointer;
+    
+}
+.cb {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    
+}
+label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 100%;
+}
+.butt {
+    display: flex;
+    width: 10%;
+    align-self: center;
+}
+input[type="submit"] {
+    background-color: rgb(116, 116, 240);
+    border-radius: 5%;
+    color: white;
+}

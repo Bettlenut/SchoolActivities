@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>MMO Games API</h1>
+    <button onclick="fetchAllGame()">Fetch API</button>
+    <ul id="gameslist">
+
+    </ul>
+    <script>
+        function fetchAllGame() {
+            fetch("https://dogapi.dog/api/v2/breeds")
+                .then(response => response.json())
+                .then(data => {
+                    const gameslist = document.getElementById("gameslist")
+                    gameslist.innerHTML= "";
+                    data.data.forEach(game => {
+                        const li = document.createElement("li");
+                        li.innerHTML = game.attributes.name;
+                        gameslist.appendChild(li);
+                    })
+                })
+                .catch()
+        }
+    </script>
+</body>
+
+</html>
